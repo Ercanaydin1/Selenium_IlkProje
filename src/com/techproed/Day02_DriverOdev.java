@@ -13,6 +13,7 @@ public class Day02_DriverOdev {
     // 6 - driver'ımızı kapatalım.
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver" , "C:\\Users\\ercna\\OneDrive\\Belgeler\\selenium dependencis\\drivers\\chromedriver.exe");
+
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 // 1 - ilk önce google.com'a gidelim.

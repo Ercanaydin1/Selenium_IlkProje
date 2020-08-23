@@ -1,5 +1,8 @@
 package com.techproed;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class Day02_Homework {
    //1. Yeni bir class oluşturun :Homework
 
@@ -11,4 +14,16 @@ public class Day02_Homework {
 //7. Sayfayı yenileyin(refresh)
 //8. Maximize the window
 //9. Close the browser (edited)
+   public static void main(String[] args) {
+       System.setProperty("webdriver.chrome.driver" , "C:\\Users\\ercna\\OneDrive\\Belgeler\\selenium dependencis\\drivers\\chromedriver.exe");
+       WebDriver driver = new ChromeDriver();
+
+       driver.manage().window().maximize();
+
+       driver.get("http://google.com");
+
+       driver.navigate().to("http://facebook.com");
+
+
+   }
 }

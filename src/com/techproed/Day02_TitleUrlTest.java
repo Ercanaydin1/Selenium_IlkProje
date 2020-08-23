@@ -9,10 +9,14 @@ public class Day02_TitleUrlTest {
     public static void main(String[] args) {
         // Java projemize, chromedriver'ı tanıttık.
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\ercna\\OneDrive\\Belgeler\\selenium dependencis\\drivers\\chromedriver.exe");
+
         WebDriver driver = new ChromeDriver();
+
         // youtube.com'a gidelim.
         driver.get("http://youtube.com");
+
         // sayfanın title(yani başlığını) alalım.
+
         String sayfaBasligi = driver.getTitle();
         if(sayfaBasligi.contains("Video")){
             System.out.println("Var : " + sayfaBasligi);
